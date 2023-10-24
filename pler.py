@@ -28,14 +28,14 @@ async def help(event):
     link_preview=False,
     buttons=(
       [
-        Button.url('owner ganteng💗', 't.me/rewe_anu'),
+        Button.url('owner ganteng❤️‍🔥', 't.me/rewe_anu'),
       ],
       [
         Button.url('support🐣', 't.me/supprotrewe'),
-        Button.url('channel🐥', 't.me/nunagabut2'),
+        Button.url('channel🤍', 't.me/nunagabut2'),
       ],
       [
-        Button.url('minimal donasi ya anj☕', 'https://link.dana.id/qr/g6f1u7du')
+        Button.url('donasi juga boleh☕', 'https://link.dana.id/qr/g6f1u7du')
       ],
     )
   )
@@ -88,7 +88,7 @@ async def mentionall(event):
     if not chat_id in spam_chats:
       break
     usrnum += 1
-    usrtxt += f"🐥 [{usr.first_name}](tg://user?id={usr.id})\n"
+    usrtxt += f"🐊 [{usr.first_name}](tg://user?id={usr.id})\n"
     if usrnum == 5:
       if mode == "teks":
         txt = f"{usrtxt}\n\n{msg}"
