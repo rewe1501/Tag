@@ -66,7 +66,7 @@ async def mentionall(event):
     ):
       is_admin = True
   if not is_admin:
-    return await event.respond("**Lu bukan admin anjeng**")
+    return await event.respond("*🐳u bukan admin anjeng**")
   
   if event.pattern_match.group(1) and event.is_reply:
     return await event.respond("**Minimal kasih pesan anjeng!!**")
@@ -88,7 +88,7 @@ async def mentionall(event):
     if not chat_id in spam_chats:
       break
     usrnum += 1
-    usrtxt += f"💣 [{usr.first_name}](tg://user?id={usr.id})\n"
+    usrtxt += f"🐳 [{usr.first_name}](tg://user?id={usr.id})\n"
     if usrnum == 5:
       if mode == "teks":
         txt = f"{usrtxt}\n\n{msg}"
