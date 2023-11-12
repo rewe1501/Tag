@@ -22,7 +22,7 @@ spam_chats = []
 
 @kntl.on(events.NewMessage(pattern="^/start$"))
 async def help(event):
-  helptext = "**Yaelah biji tinggal ketik all doang bego pake ketik start**"
+  helptext = "Yaelah idiot tinggal ketik all doang bego banget klik klik start mak kamu klik start"
   await event.reply(
     helptext,
     link_preview=False,
@@ -44,7 +44,7 @@ async def help(event):
 async def mentionall(event):
   chat_id = event.chat_id
   if event.is_private:
-    return await event.respond("**Jangan private bego**")
+    return await event.respond("Jangan private idiot!")
   
   is_admin = False
   try:
@@ -66,10 +66,10 @@ async def mentionall(event):
     ):
       is_admin = True
   if not is_admin:
-    return await event.respond("*🐳u bukan admin anjeng**")
+    return await event.respond("luu bukan admin idiot banget bocah!")
   
   if event.pattern_match.group(1) and event.is_reply:
-    return await event.respond("**Minimal kasih pesan anjeng!!**")
+    return await event.respond("Minimal kasih pesan idiot banget!")
   elif event.pattern_match.group(1):
     mode = "teks"
     msg = event.pattern_match.group(1)
@@ -77,9 +77,9 @@ async def mentionall(event):
     mode = "balas"
     msg = await event.get_reply_message()
     if msg == None:
-        return await event.respond("**Si anjeng dibilang kasih pesan !!**")
+        return await event.respond("Si anjeng dibilang kasih pesan mak kamu ya!")
   else:
-    return await event.respond("**Si anjeng dibilang kasih pesan !!**")
+    return await event.respond("Si anjeng dibilang kasih pesan mak kamu ya!")
   
   spam_chats.append(chat_id)
   usrnum = 0
@@ -106,13 +106,13 @@ async def mentionall(event):
 @kntl.on(events.NewMessage(pattern="^/stop$"))
 async def cancel_spam(event):
   if not event.chat_id in spam_chats:
-    return await event.respond('**Bego orang gak ada tag all**')
+    return await event.respond('eh muka ancur orang gada tag all')
   else:
     try:
       spam_chats.remove(event.chat_id)
     except:
       pass
-    return await event.respond('**Iya Anjeng Nih Gua Stop.**')
+    return await event.respond('**Iya muka ancur ni gua stop.')
 
 
 
