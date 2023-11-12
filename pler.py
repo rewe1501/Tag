@@ -112,7 +112,7 @@ async def cancel_spam(event):
       spam_chats.remove(event.chat_id)
     except:
       pass
-    return await event.respond('**Iya muka ancur ni gua stop.')
+    return await event.respond('Iya muka ancur ni gua stop.')
 
 
 
