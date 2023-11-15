@@ -44,7 +44,7 @@ async def help(event):
 async def mentionall(event):
   chat_id = event.chat_id
   if event.is_private:
-    return await event.respond("Jangan private idiot!")
+    return await event.respond("𝙟𝙖𝙣𝙜𝙖𝙣 𝙥𝙧𝙞𝙫𝙖𝙩𝙚 𝙞𝙙𝙞𝙤𝙩!")
   
   is_admin = False
   try:
@@ -66,7 +66,7 @@ async def mentionall(event):
     ):
       is_admin = True
   if not is_admin:
-    return await event.respond("luu bukan admin idiot banget bocah!")
+    return await event.respond("𝙡𝙪 𝙗𝙪𝙠𝙣 𝙖𝙙𝙢𝙞𝙣 𝙞𝙙𝙞𝙤𝙩 𝙗𝙖𝙣𝙜𝙚𝙩 𝙗𝙤𝙘𝙖𝙝")
   
   if event.pattern_match.group(1) and event.is_reply:
     return await event.respond("Minimal kasih pesan idiot banget!")
