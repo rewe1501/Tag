@@ -69,7 +69,7 @@ async def mentionall(event):
     return await event.respond("𝙡𝙪 𝙗𝙪𝙠𝙣 𝙖𝙙𝙢𝙞𝙣 𝙞𝙙𝙞𝙤𝙩 𝙗𝙖𝙣𝙜𝙚𝙩 𝙗𝙤𝙘𝙖𝙝")
   
   if event.pattern_match.group(1) and event.is_reply:
-    return await event.respond("Minimal kasih pesan idiot banget!")
+    return await event.respond("𝙢𝙞𝙣𝙞𝙢𝙖𝙡 𝙠𝙖𝙨𝙞𝙝 𝙥𝙚𝙨𝙖𝙣 𝙞𝙙𝙞𝙤𝙩 𝙗𝙖𝙣𝙜𝙚𝙩!")
   elif event.pattern_match.group(1):
     mode = "teks"
     msg = event.pattern_match.group(1)
@@ -77,9 +77,9 @@ async def mentionall(event):
     mode = "balas"
     msg = await event.get_reply_message()
     if msg == None:
-        return await event.respond("Si anjeng dibilang kasih pesan mak kamu ya!")
+        return await event.respond("𝙨𝙞 𝙖𝙣𝙟𝙚𝙣𝙜 𝙙𝙞𝙗𝙞𝙡𝙖𝙣𝙜 𝙠𝙖𝙨𝙞 𝙥𝙚𝙨𝙖𝙣 𝙞𝙙𝙞𝙤𝙩 𝙗𝙚𝙩 𝙗𝙤𝙘𝙖𝙝 𝙚𝙩𝙙𝙖𝙝")
   else:
-    return await event.respond("Si anjeng dibilang kasih pesan mak kamu ya!")
+    return await event.respond("𝙨𝙞 𝙖𝙣𝙟𝙚𝙣𝙜 𝙙𝙞𝙗𝙞𝙡𝙖𝙣𝙜 𝙠𝙖𝙨𝙞 𝙥𝙚𝙨𝙖𝙣 𝙞𝙙𝙞𝙤𝙩 𝙗𝙚𝙩 𝙗𝙤𝙘𝙖𝙝 𝙚𝙩𝙙𝙖𝙝")
   
   spam_chats.append(chat_id)
   usrnum = 0
@@ -106,13 +106,13 @@ async def mentionall(event):
 @kntl.on(events.NewMessage(pattern="^/stop$"))
 async def cancel_spam(event):
   if not event.chat_id in spam_chats:
-    return await event.respond('eh muka ancur orang gada tag all')
+    return await event.respond('𝙚𝙝 𝙢𝙪𝙠𝙖 𝙖𝙣𝙘𝙪𝙧 𝙤𝙧𝙖𝙣𝙜 𝙜𝙖𝙙𝙖 𝙩𝙖𝙜 𝙖𝙡𝙡 𝙜𝙤𝙗𝙡𝙤𝙠')
   else:
     try:
       spam_chats.remove(event.chat_id)
     except:
       pass
-    return await event.respond('Iya muka ancur ni gua stop.')
+    return await event.respond('𝙞𝙮𝙖 𝙢𝙪𝙠𝙖 𝙖𝙣𝙘𝙪𝙧 𝙣𝙞 𝙜𝙪𝙖 𝙨𝙩𝙤𝙥𝙞𝙣')
 
 
 
