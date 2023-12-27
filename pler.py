@@ -28,14 +28,14 @@ async def help(event):
     link_preview=False,
     buttons=(
       [
-        Button.url('𝘀𝗲𝘀𝗲𝗽𝘂𝗵', 't.me/rewe_anu'),
+        Button.url('gua', 't.me/rewe_anu'),
       ],
       [
-        Button.url('𝘀𝘂𝗽𝗽𝗼𝗿𝘁', 't.me/supprotrewe'),
-        Button.url('𝘁𝗵𝗶𝘀 𝗶𝘀 𝗺𝘆 𝗵𝗼𝘂𝘀𝗲', 't.me/nunagabut2'),
+        Button.url('suport', 't.me/supprotrewe'),
+        Button.url('ch gua', 't.me/nunagabut2'),
       ],
       [
-        Button.url('𝗺𝗶𝗻𝗶𝗺𝗮𝗹 𝗻𝘆𝘂𝗺𝗯𝗮𝗻𝗴 𝗹𝗮𝗵 𝗻𝘆𝗲𝘁', 'https://link.dana.id/qr/g6f1u7du')
+        Button.url('nyumbang lah mek', 'https://link.dana.id/qr/g6f1u7du')
       ],
     )
   )
