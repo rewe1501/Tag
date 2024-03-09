@@ -20,7 +20,7 @@ kntl = TelegramClient('kynan', api_id, api_hash).start(bot_token=bot_token)
 spam_chats = []
 
 
-@kntl.on(events.NewMessage(pattern="^/mstart$"))
+@kntl.on(events.NewMessage(pattern="^/start$"))
 async def help(event):
   helptext = "𝘆𝗮𝗲𝗹𝗮𝗵 𝗶𝗱𝗶𝗼𝘁 𝘁𝗶𝗻𝗴𝗴𝗮𝗹 𝗸𝗲𝘁𝗶𝗸 𝗮𝗹𝗹 𝗱𝗼𝗮𝗻𝗴 𝗯𝗲𝗴𝗼 𝗯𝗮𝗻𝗴𝗲𝘁 𝗸𝗹𝗶𝗸 𝗸𝗹𝗶𝗸 𝘀𝘁𝗮𝗿𝘁 𝗺𝗮𝗸 𝗸𝗮𝗺𝘂 𝗸𝗹𝗶𝗸 𝘀𝘁𝗮𝗿𝘁,𝗸𝗮𝗹𝗼 𝗺𝗮𝘂 𝗽𝗹𝗮𝘆 𝗺𝘂𝘀𝗶𝗰 𝘁𝗶𝗻𝗴𝗴𝗮𝗹 𝗸𝗲𝘁𝗶𝗸 /play (𝗷𝘂𝗱𝘂𝗹 𝗹𝗮𝗴𝘂),𝗸𝗮𝗹𝗼 𝗺𝗮𝘂 𝗽𝗹𝗮𝘆 𝘃𝗶𝗱𝗲𝗼 𝘁𝗶𝗻𝗴𝗴𝗮𝗹 𝗸𝗲𝘁𝗶𝗸 /vplay (𝗷𝘂𝗱𝘂𝗹 𝘃𝗶𝗱𝗲𝗼),𝗸𝗮𝗹𝗼 𝗴𝗮 𝗻𝘆𝗮𝘂𝘁 𝗻𝗴𝗮𝗱𝘂 𝗮𝗷𝗮 𝘀𝗮𝗺𝗮 𝘀𝗲𝘀𝗲𝗽𝘂𝗵 𝘆𝗮𝗻𝗴 𝗱𝗶𝗯𝗮𝘄𝗮𝗵 𝗶𝘁𝘂."
   await event.reply(
@@ -88,7 +88,7 @@ async def mentionall(event):
     if not chat_id in spam_chats:
       break
     usrnum += 1
-    usrtxt += f"❤️‍🔥 [{usr.first_name}](tg://user?id={usr.id})\n"
+    usrtxt += f"👅 [{usr.first_name}](tg://user?id={usr.id})\n"
     if usrnum == 5:
       if mode == "teks":
         txt = f"{usrtxt}\n\n{msg}"
