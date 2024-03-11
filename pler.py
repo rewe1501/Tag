@@ -16,8 +16,8 @@ LOGGER = logging.getLogger(__name__)
 api_id = API_ID
 api_hash = API_HASH
 bot_token = TOKEN
-start_img_url = START_IMG_URL
-kntl = TelegramClient('kynan', api_id, api_hash).start(bot_token=bot_token).start(start_img_url=start_img_url)
+img_url = IMG_URL
+kntl = TelegramClient('kynan', api_id, api_hash).start(bot_token=bot_token).start(img_url=img_url)
 spam_chats = []
 
 
