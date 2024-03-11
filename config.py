@@ -11,6 +11,6 @@ TOKEN = os.getenv("TOKEN")
 
 # Images
 START_IMG_URL = getenv(
-    "START_IMG_URL"https://telegra.ph/file/f6665b3a39ca04218f7ea.jpg"
+    "START_IMG_URL="https://telegra.ph/file/f6665b3a39ca04218f7ea.jpg"
 )
  sys.exit()
