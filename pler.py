@@ -28,10 +28,10 @@ async def help(event):
     link_preview=False,
     buttons=(
       [
-        Button.url('gua', 't.me/rewe_anu'),
+        Button.url('guaa', 't.me/rewe_anu'),
       ],
       [
-        Button.url('starboy', 't.me/emang_boyeh'),
+        Button.url('rape me', 't.me/emang_boyeh'),
         Button.url('ch gua', 't.me/nunagabut2'),
       ],
       [
