@@ -31,7 +31,7 @@ async def help(event):
         Button.url('guaa', 't.me/rewe_anu'),
       ],
       [
-        Button.url('rape me', 't.me/emang_boyeh'),
+        Button.url('gua2', 't.me/rewe_music'),
         Button.url('ch gua', 't.me/nunagabut2'),
       ],
       [
