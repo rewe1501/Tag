@@ -32,7 +32,7 @@ async def help(event):
       ],
       [
         Button.url('gua2', 't.me/rewe_music'),
-        Button.url('ch gua', 't.me/nunagabut2'),
+        Button.url('ch gua', 't.me/about_rewe'),
       ],
       [
         Button.url('nyumbang lah mek', 'https://link.dana.id/qr/g6f1u7du')
