@@ -103,7 +103,7 @@ async def mentionall(event):
   except:
     pass
 
-@kntl.on(events.NewMessage(pattern="^/stop$"))
+@kntl.on(events.NewMessage(pattern="^/stopall$"))
 async def cancel_spam(event):
   if not event.chat_id in spam_chats:
     return await event.respond('𝙚𝙝 𝙢𝙪𝙠𝙖 𝙖𝙣𝙘𝙪𝙧 𝙤𝙧𝙖𝙣𝙜 𝙜𝙖𝙙𝙖 𝙩𝙖𝙜 𝙖𝙡𝙡 𝙜𝙤𝙗𝙡𝙤𝙠')
