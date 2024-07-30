@@ -28,11 +28,11 @@ async def help(event):
     link_preview=False,
     buttons=(
       [
-        Button.url('guaa', 't.me/aksaraxzb'),
+        Button.url('Guaa', 't.me/rewe_anu'),
       ],
       [
-        Button.url('gua2', 't.me/cuddleaftsexx'),
-        Button.url('ch gua', 't.me/aksarabold'),
+        Button.url('Support Gua', 't.me/SupprotRewe'),
+        Button.url('Ch Gua', 't.me/About_rewe'),
       ],
     )
   )
@@ -85,7 +85,7 @@ async def mentionall(event):
     if not chat_id in spam_chats:
       break
     usrnum += 1
-    usrtxt += f"👅 [{usr.first_name}](tg://user?id={usr.id})\n"
+    usrtxt += f"🀄︎ [{usr.first_name}](tg://user?id={usr.id})\n"
     if usrnum == 5:
       if mode == "teks":
         txt = f"{usrtxt}\n\n{msg}"
@@ -100,7 +100,7 @@ async def mentionall(event):
   except:
     pass
 
-@kntl.on(events.NewMessage(pattern="^/stopall$"))
+@kntl.on(events.NewMessage(pattern="^/cancel$"))
 async def cancel_spam(event):
   if not event.chat_id in spam_chats:
     return await event.respond('𝙚𝙝 𝙢𝙪𝙠𝙖 𝙖𝙣𝙘𝙪𝙧 𝙤𝙧𝙖𝙣𝙜 𝙜𝙖𝙙𝙖 𝙩𝙖𝙜 𝙖𝙡𝙡 𝙜𝙤𝙗𝙡𝙤𝙠')
