@@ -34,7 +34,6 @@ async def help(event):
         Button.url('ʙɪɴɪ ɢᴜᴀ', 't.me/etheridde'),
       ], 
       [
-
         Button.url('ᴛᴀᴍʙᴀʜᴋᴀɴ sᴀʏᴀ ᴋᴇ ɢʀᴏᴜᴘ', 't.me/rkmusicrobot?startgroup=true'),
       ],
     )
