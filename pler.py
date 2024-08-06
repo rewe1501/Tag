@@ -16,13 +16,13 @@ LOGGER = logging.getLogger(__name__)
 api_id = API_ID
 api_hash = API_HASH
 bot_token = TOKEN
-kntl = TelegramClient('kynan', api_id, api_hash).start(bot_token=bot_token)
+kntl = TelegramClient('rewe', api_id, api_hash).start(bot_token=bot_token)
 spam_chats = []
 
 
 @kntl.on(events.NewMessage(pattern="^/start$"))
 async def help(event):
-  helptext = "*ʜɪɪɪ {} !* sᴀʏᴀ ᴀᴅᴀʟᴀʜ ʙᴏᴛ ᴛᴀɢᴀʟʟ ʏᴀɴɢ ᴅᴀᴘᴀᴛ ᴍᴇ-ᴍᴇɴᴛɪᴏɴ ᴜsᴇʀ ʏᴀɴɢ ᴀᴅᴀ ᴅɪ ɢʀᴏᴜᴘ ᴀɴᴅᴀ"
+  helptext = "ʜɪɪɪ {mention} sᴀʏᴀ ᴀᴅᴀʟᴀʜ ʙᴏᴛ ᴛᴀɢᴀʟʟ ʏᴀɴɢ ᴅᴀᴘᴀᴛ ᴍᴇ-ᴍᴇɴᴛɪᴏɴ ᴜsᴇʀ ʏᴀɴɢ ᴀᴅᴀ ᴅɪ ɢʀᴏᴜᴘ ᴀɴᴅᴀ"
   await event.reply(
     helptext,
     link_preview=False,
@@ -32,6 +32,9 @@ async def help(event):
       ],
       [
         Button.url('ʙɪɴɪ ɢᴜᴀ', 't.me/etheridde'),
+      ], 
+      [
+
         Button.url('ᴛᴀᴍʙᴀʜᴋᴀɴ sᴀʏᴀ ᴋᴇ ɢʀᴏᴜᴘ', 't.me/rkmusicrobot?startgroup=true'),
       ],
     )
