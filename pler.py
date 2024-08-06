@@ -22,7 +22,7 @@ spam_chats = []
 
 @kntl.on(events.NewMessage(pattern="^/start$"))
 async def help(event):
-  helptext = "ʜɪɪɪ {mention} sᴀʏᴀ ᴀᴅᴀʟᴀʜ ʙᴏᴛ ᴛᴀɢᴀʟʟ ʏᴀɴɢ ᴅᴀᴘᴀᴛ ᴍᴇ-ᴍᴇɴᴛɪᴏɴ ᴜsᴇʀ ʏᴀɴɢ ᴀᴅᴀ ᴅɪ ɢʀᴏᴜᴘ ᴀɴᴅᴀ"
+  helptext = "👋ʜɪɪɪ sᴀʏᴀ ᴀᴅᴀʟᴀʜ ʙᴏᴛ ᴛᴀɢᴀʟʟ ʏᴀɴɢ ᴅᴀᴘᴀᴛ ᴍᴇ-ᴍᴇɴᴛɪᴏɴ ᴜsᴇʀ ʏᴀɴɢ ᴀᴅᴀ ᴅɪ ɢʀᴏᴜᴘ ᴀɴᴅᴀ, sᴀʏᴀ Jᴜɢᴀ ʙɪsᴀ ᴘʟᴀʏ ᴍᴜsɪᴄ ᴅɪ ɢʀᴏᴜᴘ ᴀɴᴅᴀ ᴍᴀᴜᴘᴜɴ ᴄʜᴀɴɴᴇʟ ᴀɴᴅᴀ, ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪʙᴀᴡᴀʜ ᴜɴᴛᴜᴋ ᴍᴇɴᴀᴍʙᴀʜ ᴋᴀɴ sᴀʏᴀ ᴋᴇ ɢʀᴏᴜᴘ & ᴄʜᴀɴɴᴇʟ ᴀɴᴅᴀ"
   await event.reply(
     helptext,
     link_preview=False,
