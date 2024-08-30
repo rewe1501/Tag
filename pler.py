@@ -28,13 +28,13 @@ async def help(event):
     link_preview=False,
     buttons=(
       [
-        Button.url('🙇‍♂️ɢᴜᴀ🙇‍♂️', 't.me/rewetzys'),
+        Button.url('ʀᴇᴢɪɪ', 't.me/rewetzy'),
       ],
       [
-        Button.url('🙇‍♀️ʙɪɴɪ ɢᴜᴀ🙇‍♀️', 't.me/etheridde'),
+        Button.url('ꝛ`', 't.me/alwaysrtzy'),
       ], 
       [
-        Button.url('✛ᴛᴀᴍʙᴀʜᴋᴀɴ sᴀʏᴀ ᴋᴇ ɢʀᴏᴜᴘ✛', 't.me/rkmusicrobot?startgroup=true'),
+        Button.url('✛ᴛᴀᴍʙᴀʜᴋᴀɴ sᴀʏᴀ ᴋᴇ ɢʀᴏᴜᴘ✛', 't.me/ReziiMusic_Bot?startgroup=true'),
       ],
     )
   )
