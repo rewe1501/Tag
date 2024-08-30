@@ -22,7 +22,7 @@ spam_chats = []
 
 @kntl.on(events.NewMessage(pattern="^/start$"))
 async def help(event):
-  helptext = f"<blockquote>👋ʜɪɪɪ sᴀʏᴀ ᴀᴅᴀʟᴀʜ ʙᴏᴛ ᴛᴀɢᴀʟʟ ʏᴀɴɢ ᴅᴀᴘᴀᴛ ᴍᴇ-ᴍᴇɴᴛɪᴏɴ ᴜsᴇʀ ʏᴀɴɢ ᴀᴅᴀ ᴅɪ ɢʀᴏᴜᴘ ᴀɴᴅᴀ, sᴀʏᴀ Jᴜɢᴀ ʙɪsᴀ ᴘʟᴀʏ ᴍᴜsɪᴄ ᴅɪ ɢʀᴏᴜᴘ ᴀɴᴅᴀ ᴍᴀᴜᴘᴜɴ ᴄʜᴀɴɴᴇʟ ᴀɴᴅᴀ, ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪʙᴀᴡᴀʜ ᴜɴᴛᴜᴋ ᴍᴇɴᴀᴍʙᴀʜ ᴋᴀɴ sᴀʏᴀ ᴋᴇ ɢʀᴏᴜᴘ & ᴄʜᴀɴɴᴇʟ ᴀɴᴅᴀ</blockquote>"
+  helptext = "👋ʜɪɪɪ sᴀʏᴀ ᴀᴅᴀʟᴀʜ ʙᴏᴛ ᴛᴀɢᴀʟʟ ʏᴀɴɢ ᴅᴀᴘᴀᴛ ᴍᴇ-ᴍᴇɴᴛɪᴏɴ ᴜsᴇʀ ʏᴀɴɢ ᴀᴅᴀ ᴅɪ ɢʀᴏᴜᴘ ᴀɴᴅᴀ, sᴀʏᴀ Jᴜɢᴀ ʙɪsᴀ ᴘʟᴀʏ ᴍᴜsɪᴄ ᴅɪ ɢʀᴏᴜᴘ ᴀɴᴅᴀ ᴍᴀᴜᴘᴜɴ ᴄʜᴀɴɴᴇʟ ᴀɴᴅᴀ, ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪʙᴀᴡᴀʜ ᴜɴᴛᴜᴋ ᴍᴇɴᴀᴍʙᴀʜ ᴋᴀɴ sᴀʏᴀ ᴋᴇ ɢʀᴏᴜᴘ & ᴄʜᴀɴɴᴇʟ ᴀɴᴅᴀ"
   await event.reply(
     helptext,
     link_preview=False,
@@ -43,7 +43,7 @@ async def help(event):
 async def mentionall(event):
   chat_id = event.chat_id
   if event.is_private:
-    return await event.respond(f"<blockquote>jangan private idiot!</blockquote>")
+    return await event.respond("jangan private idiot!")
   
   is_admin = False
   try:
@@ -65,10 +65,10 @@ async def mentionall(event):
     ):
       is_admin = True
   if not is_admin:
-    return await event.respond(f"<blockquote>lu bukan admin idiot banget bocah!</blockquote>")
+    return await event.respond("lu bukan admin idiot banget bocah!")
   
   if event.pattern_match.group(1) and event.is_reply:
-    return await event.respond(f"<blockquote>minimal kasih pesan idiot banget!</blockquote>")
+    return await event.respond("minimal kasih pesan idiot banget!")
   elif event.pattern_match.group(1):
     mode = "teks"
     msg = event.pattern_match.group(1)
@@ -76,9 +76,9 @@ async def mentionall(event):
     mode = "balas"
     msg = await event.get_reply_message()
     if msg == None:
-        return await event.respond(f"<blockquote>si anjeng dibilang kasih pesan idiot bet bocah etdah!</blockquote>")
+        return await event.respond("si anjeng dibilang kasih pesan idiot bet bocah etdah!")
   else:
-    return await event.respond(f"si anjeng dibilang kasi pesan idiot bet bocah etdah!</blockquote>")
+    return await event.respond("si anjeng dibilang kasi pesan idiot bet bocah etdah!")
   
   spam_chats.append(chat_id)
   usrnum = 0
@@ -87,7 +87,7 @@ async def mentionall(event):
     if not chat_id in spam_chats:
       break
     usrnum += 1
-    usrtxt += f"<blockquote>🍌 [{usr.first_name}](tg://user?id={usr.id})\n</blockquote>"
+    usrtxt += "🍌 [{usr.first_name}](tg://user?id={usr.id})\n"
     if usrnum == 5:
       if mode == "teks":
         txt = f"{usrtxt}\n\n{msg}"
@@ -105,7 +105,7 @@ async def mentionall(event):
 @kntl.on(events.NewMessage(pattern="^/cancel$"))
 async def cancel_spam(event):
   if not event.chat_id in spam_chats:
-    return await event.respond(f'<blockquote>eh muka ancur orang gada tagall goblok!</blockquote>')
+    return await event.respond('eh muka ancur orang gada tagall goblok!')
   else:
     try:
       spam_chats.remove(event.chat_id)
