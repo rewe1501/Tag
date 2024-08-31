@@ -87,7 +87,7 @@ async def mentionall(event):
     if not chat_id in spam_chats:
       break
     usrnum += 1
-    usrtxt += "🍌 [{usr.first_name}](tg://user?id={usr.id})\n"
+    usrtxt += f"🍌 [{usr.first_name}](tg://user?id={usr.id})\n"
     if usrnum == 5:
       if mode == "teks":
         txt = f"{usrtxt}\n\n{msg}"
@@ -111,7 +111,7 @@ async def cancel_spam(event):
       spam_chats.remove(event.chat_id)
     except:
       pass
-    return await event.respond(f'<blockquote> iya muka ancur ni gua stopin tagall nya!</blockquote>')
+    return await event.respond('iya muka ancur ni gua stopin tagall nya!')
 
 
 
